@@ -1,0 +1,53 @@
+.container{
+    margin:0 450px;
+    
+}
+.title{
+    background-color: #FDA500;
+    padding:20px;
+    text-align: center;
+    margin:0;
+    border-radius: 7px 7px 0 0;
+}
+form{
+    background-color:rgb(241, 238, 238);
+    border-radius: 0 0 7px 7px;
+}
+form>div{
+    font-size: 20px;
+    padding:10px 5px;
+}
+.wh{
+    display: inline-block;
+    width:35%;
+}
+input{
+    font-size: 18px;
+}
+.dr{
+    display: flex;
+    align-items: center;
+}
+select{
+    font-size: 18px;
+}
+.button{
+    text-align:center;
+}
+.button input{
+    width:100px;
+    height:40px;
+    font-size: 20px;
+    background-color:#FDA500 ;
+    border:none;
+    border-radius: 10px;
+    color:rgb(48, 47, 47);
+
+}
+.button input:hover{
+    width: 110px;
+    height:45px;
+    cursor: pointer;
+}
+
+

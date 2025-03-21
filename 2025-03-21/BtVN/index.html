@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTVN</title>
+    <link rel="stylesheet" href="/2025-03-21/BtVN/asset/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2 class="title">PT Ứng dụng Web - Thiết kế FORM đơn giản</h2>
+        <form  action="" method="GET">
+            <div>
+                <label class="wh" for="name">Họ và tên</label>
+                <input id="name" type="text" name="hoten" placeholder="Họ và tên" required>
+            </div>
+            <div>
+                <label class="wh"  for="email">Email</label>
+                <input id="email" type="text" name="mail" placeholder="abc@xyz.com" required>
+            </div>
+            <div>
+                <label class="wh" for="phone-number">Số điện thoại</label>
+                <input id="phone-number" type="text" name="sdt" placeholder="0987654321" required>
+            </div>
+            <div>
+                <span class="wh">Quê quán</span>
+                <select name="hometown" >
+                    <option value="">--chọn thành phố--</option>
+                    <option value="hanoi">Hà nội</option>
+                    <option value="tphcm">Tp HCM</option>
+                    <option value="thaibinh">Thái Bình</option>
+                    <option value="thanhhoa">Thanh Hoá</option>
+                </select>
+            </div>
+            <div>
+                <span class="wh">Giới tính</span>
+                <span>
+                    <input name="sex" id="nam" type="radio" value="name">
+                    <label for="nam">Nam</label>
+                    <input name="sex" id="nu" type="radio" value="nue">
+                    <label for="nu">Nữ</label>
+                </span>
+            </div>
+            <div>
+                <span class="wh">Kỹ năng</span>
+                <span>
+                    <input name="skill" type="checkbox" value="kn" id="HTML">
+                    <label for="HTML">HTML</label>
+                    <input name="skill" type="checkbox" value="kn" id="CSS">
+                    <label  for="CSS">CSS</label>
+                    <input name="skill" type="checkbox" value="kn" id="JS">
+                    <label for="JS">JS</label>
+                    <input name="skill" type="checkbox" value="kn" id="BOOTSTRAP">
+                    <label for="BOOTSTRAP">BOOTSTRAP</label>
+                </span>
+            </div>
+            <div>
+                <label class="wh" for="date">Ngày sinh</label>
+                <input id="date" type="date" name="ns">
+            </div>
+            <div class="dr">
+                <span class="wh">Giới thiệu bản thân</span>
+                <textarea cols="50" rows="8" placeholder="Ghi thêm"></textarea>
+            </div>
+            <div class="button">
+                <input type="submit" value="Submit">
+                <input type="submit" value="Reset">
+            </div>
+        </form>
+    </div>
+    
+    
+</body>
+</html>
