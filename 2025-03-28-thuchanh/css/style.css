@@ -1,0 +1,135 @@
+body{
+    margin:0;
+}
+.header .menu{
+    margin:0;
+    display:flex;
+    list-style-type: none;
+    background-color: rgb(160, 159, 159);
+}
+.header{
+    border:2px rgb(68, 68, 68) solid;
+}
+.header .menu li a{
+    text-decoration: none;
+    padding:0 10px;
+}
+.header .menu li{
+    padding:16px 0;
+
+}
+.header .menu li:hover{
+    background-color: azure;
+    cursor: pointer;
+
+}
+.main{
+    display:flex;
+}
+.main .list{
+    width:30%;
+    border:1px rgb(68, 68, 68) solid;
+}
+.main .list a{
+    text-decoration: none;
+}
+.main .list li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+a{
+    color:blue;
+}
+.box{
+    flex:1;
+}
+.box .title{
+    display:flex;
+    align-items: center;
+}
+.box .title img{
+    width:30px;
+    height:30px;
+    margin-right:10px;
+}
+.box .newpaper{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.inner-box{
+    margin:20px 10px;
+    width:48%;
+}
+.inner-box .button{
+    margin:20px 0;
+    text-align: center;
+    background-color: rgb(122, 122, 255);
+    width:120px;
+    padding:10px;
+    border-radius: 10px;
+}
+.inner-box .button:hover{
+    background-color: rgb(94, 94, 250);
+    cursor: pointer;
+}
+
+.fd1{
+    display:flex;
+    align-items: center;
+
+}
+.fd1 img{
+    width:30px;
+    height:30px;
+}
+.lt a{
+    text-decoration: none;
+}
+.lt a:hover{
+    text-decoration:underline;
+}
+fooder{
+    border:1px rgb(160, 159, 159) solid;
+    display:flex;
+    justify-content:space-between;
+    background-color: rgb(212, 202, 202);
+    align-items: center;
+}
+fooder .icon{
+    display:flex;
+    align-items: center;
+    margin-right:50px;
+}
+fooder .text{
+    padding:30px;
+
+}
+fooder .icon div{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:30px;
+    height:30px;
+    background-color: white;
+    border-radius: 50px;
+    margin:0 5px;
+    color:rgb(250, 137, 156);
+}
+fooder .icon div i{
+    border-radius: 50px;
+}
+fooder .icon div:hover{
+    background-color: rgb(158, 243, 243);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
