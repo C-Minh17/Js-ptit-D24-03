@@ -94,23 +94,23 @@ a{
 .lt a:hover{
     text-decoration:underline;
 }
-fooder{
+footer{
     border:1px rgb(160, 159, 159) solid;
     display:flex;
     justify-content:space-between;
     background-color: rgb(212, 202, 202);
     align-items: center;
 }
-fooder .icon{
+footer .icon{
     display:flex;
     align-items: center;
     margin-right:50px;
 }
-fooder .text{
+footer .text{
     padding:30px;
 
 }
-fooder .icon div{
+footer .icon div{
     display:flex;
     align-items: center;
     justify-content: center;
@@ -121,10 +121,10 @@ fooder .icon div{
     margin:0 5px;
     color:rgb(250, 137, 156);
 }
-fooder .icon div i{
+footer .icon div i{
     border-radius: 50px;
 }
-fooder .icon div:hover{
+footer .icon div:hover{
     background-color: rgb(158, 243, 243);
     cursor: pointer;
 }
