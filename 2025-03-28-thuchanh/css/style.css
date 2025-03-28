@@ -57,8 +57,13 @@ a{
     flex-wrap: wrap;
     justify-content: space-between;
 }
+.box .newpaper img{
+    width:100%;
+    height:auto;
+}
+
 .inner-box{
-    margin:20px 10px;
+    margin:20px 0;
     width:48%;
 }
 .inner-box .button{
