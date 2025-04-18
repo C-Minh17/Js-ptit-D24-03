@@ -1,0 +1,24 @@
+.vd1{
+    box-sizing: border-box;
+    margin:30px 50px;
+    background-color: aquamarine;
+    padding:20px 40px;
+    border:2px solid black;
+}
+.vd2 p{
+    display:inline-block;
+    padding:20px;
+    background-color: green;
+
+}
+.vd3 {
+    clear:both;
+}
+.vd3 p{
+    width:100px;
+    float:left;
+    background-color: aqua;
+    margin:10px 20px;
+    text-align: center;
+    padding:20px 0;
+}

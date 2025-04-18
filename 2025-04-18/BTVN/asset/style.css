@@ -1,0 +1,66 @@
+body{
+    margin:0;
+    padding:0;
+}
+p{
+    margin:0;
+}
+/* -->header */
+.header{
+    display: flex;
+    justify-content: center;
+}
+.header .menu{
+    position: fixed;
+    width:70%;
+    display:flex;
+    justify-content:space-evenly;
+    border:1px solid black;
+    border-radius: 50px;
+    padding:0;
+    background-color: #323E4E;
+}
+.header .menu li{
+    color:white;
+    font-size: 20px;
+    list-style-type: none;
+    padding:20px 0;
+}
+.header .menu li:hover{
+    background-color: rgb(105, 107, 109);
+}
+
+/* -->home */
+.home{
+    background-image: url(/2025-04-18/BTVN/asset/img/hinh-anh-tre-em-voi-nu-cuoi-toa-sang.jpg);
+    background-size: cover;
+    width:100%;
+    height:700px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    color: violet;
+    justify-content: center;
+}
+
+
+/* -->main */
+.main {
+    display: flex;
+}
+.main .content{
+    width:70%;
+
+}
+.main .content h2::before{
+    content: '';
+    width:20px;
+    height:20px;
+    background-image: url(/2025-04-18/BTVN/asset/img/download.jpg);
+}
+
+.main .img{
+    flex: 1;
+}
+
+
