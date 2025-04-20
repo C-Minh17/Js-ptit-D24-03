@@ -1,6 +1,7 @@
 body{
     margin:0;
     padding:0;
+    background-color: #EFEFEF;
 }
 p{
     margin:0;
@@ -27,13 +28,13 @@ p{
     padding:20px 0;
 }
 .header .menu li:hover{
-    background-color: rgb(105, 107, 109);
+    cursor: pointer;
 }
 
 /* -->home */
 .home{
-    background-image: url(/2025-04-18/BTVN/asset/img/hinh-anh-tre-em-voi-nu-cuoi-toa-sang.jpg);
-    background-size: cover;
+    background-image: url(/2025-04-18/BTVN/asset/img/meme.png);
+    background-size:contain;
     width:100%;
     height:700px;
     text-align: center;
@@ -46,21 +47,39 @@ p{
 
 /* -->main */
 .main {
+    margin:20px 10vw;
+    margin-bottom:100px;
     display: flex;
 }
 .main .content{
     width:70%;
-
 }
-.main .content h2::before{
-    content: '';
-    width:20px;
-    height:20px;
-    background-image: url(/2025-04-18/BTVN/asset/img/download.jpg);
+.main .content .title{
+    display:flex;
+    align-items: center;
+}
+.main .content .title h2{
+    margin-left:10px;
+}
+.main .content .title+p{
+    text-indent: 20px;
+}
+.main .content p{
+    margin:10px 0;
 }
 
 .main .img{
     flex: 1;
+    background-image: url(/2025-04-18/BTVN/asset/img/144130-cau-be.jpg);
+    background-size: cover;
+    width:100%;
+    height:auto;
 }
 
+/* --->footer */
+footer p{
+    text-align: center;
+    background-color: #3B495B;
+    padding:30px 0;
+}
 
