@@ -1,0 +1,79 @@
+body{
+    margin:0;
+    padding:0;
+}
+
+.container{
+    background-color: #FCFAE3;
+}
+
+.title{
+    display:flex;
+    align-items: center;
+}
+.title i{
+    font-size: 35px;
+    margin:0 20px;
+    margin-left: 14%;
+}
+
+.todo-list{
+    margin:10px 15%;
+    border:2px #CEA369 dashed;
+    border-radius: 20px;
+    background-color: white;
+}
+.todo-list .content{
+    margin:25px;
+}
+.todo-list .content ul{
+    padding:0;
+}
+.todo-list .content li{
+    /* border:1px black solid; */
+    border-radius: 10px;
+    list-style-type: none;
+    margin:10px 0;  
+    padding:10px;
+}
+.todo-list .content .evening{
+    background-color: #DFF4F4;
+}
+.todo-list .content li:nth-child(odd){
+    background-color: #FAF1D3;
+}
+.todo-list .content label{
+    font-size: 20px;
+    font-weight: 500;
+}
+.todo-list .content .important{
+    font-weight: 600;
+}
+.todo-list .content li:hover label::after{
+    font-family: "Font Awesome 6 Free" ;
+    font-weight: 100;
+    content: '\f058';
+    margin:0 10px;
+    color:green;   
+}
+.todo-list .content li input:checked~label::after{
+    font-family: "Font Awesome 6 Free" ;
+    content: '\f058';
+    margin:0 10px;
+    color:green; 
+    font-weight: 600;
+}
+.todo-list .content li input[type="checkbox"]{
+    border-radius: 50px;
+}
+.note{
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+
+
+
+
+
