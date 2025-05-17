@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n=parseInt(prompt("nhap so n:"));
+        function kiemTraNguyenTo(n){
+            if (n<2){
+                return false
+            }else{
+                let a=2;
+                for (a;a<=Math.sqrt(n);a++){
+                    if (n%a==0){
+                        return false
+                    }
+                }
+            }
+            return true
+        };
+        if (kiemTraNguyenTo(n)){
+            document.write("YES");
+        }else{
+            document.write("NO");
+        }
+    </script>
+</body>
+</html>
