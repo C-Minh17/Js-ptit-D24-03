@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let mk=prompt("nhap mk cua ban:");
+        function kiemTraMatKhau(mk){
+            if (mk.length<8){
+                return false
+            }else if (!/[A-Z]/.test(mk)){
+                return false
+            }else if (!/[A-Z]/.test(mk)){
+                return false
+            }else if (!/[\d]/.test(mk)){
+                return false
+            }
+            return true
+        };
+        if (kiemTraMatKhau(mk)){
+            document.write("YES")
+        }else{
+            document.write("NO")
+        }
+    </script>
+</body>
+</html>
