@@ -1,0 +1,266 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(90deg, #7579ff,#b224ef);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+
+}
+input,button{
+    border:none;
+    background: none;
+    outline:none;
+}
+label,input,a{
+    display: block;
+}
+.cont {
+    width: 900px;
+    height:550px;
+    overflow: hidden;
+    position:relative;
+    background-color: white;
+}
+.cont .sign-in{
+    text-align: center;
+    position: absolute;
+    width:640px;
+    height: 100%;
+    top:0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: transform 1.2s ease-in-out;
+}
+.cont .sign-in .s-in h2{
+    font-size: 36px;
+}
+.cont .sign-in .s-in label{
+    font-size: 18px;
+    font-weight: 600;
+    color:#505f75;
+    margin-bottom: 15px;
+}
+.cont .sign-in .s-in input{
+    border-bottom:1px #505f75 solid;
+    margin-bottom: 15px;
+    width:200px;
+}
+
+
+.cont .sign-in .s-in button{
+    background-image: linear-gradient(90deg, #7579ff,#b224ef);
+    width:200px;
+    padding:9px 0;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    cursor:pointer;
+    border-radius: 50px;
+    margin:20px 0;
+}
+.cont .sign-in .s-in button:hover{
+    background-image: linear-gradient(90deg,#b224ef, #7579ff);
+}
+.cont .sign-in a{
+    cursor: pointer;
+}
+.cont .sign-in a:hover{
+    color:red;
+}
+.cont .sign-in ul{
+    display:flex;
+    list-style:none;
+    justify-content: center;
+    padding:0;
+}
+.cont .sign-in ul li img{
+    width:30px;
+    height:30px;
+    margin:25px 10px;
+    cursor:pointer;
+}
+/* -------- */
+
+.bg{
+    position: absolute;
+    overflow: hidden;
+    width:900px ;
+    height: 100%;
+    top:0;
+    transition: transform 1.2s ease-in-out;
+    transform:translate3d(640px,0,0);
+    background-color: white;
+    z-index: 2;
+}
+.img{
+    position: absolute;
+    width: 260px;
+    height:100%;
+    top:0;
+    left:0;
+    overflow: hidden;
+    color:white;
+    z-index: 4;
+    transition: transform 1.2s ease-in-out;
+    transform:translate3d(0,0,0);
+}
+.img::before{
+    position: absolute;
+    content:"";
+    background-image: url("/JS30/day3-2025-05-19/asset/img/bg.jpg");
+    background-size: cover;
+    width: 900px;
+    height:100%;
+    filter:brightness(60%);
+    transition: transform 1.2s ease-in-out;
+    transform:translate3d(-640px,0,0);
+    top:0;
+    left:0;
+}
+
+
+.img .text{
+    position: absolute;
+    top:30px;
+    transition: transform 1.2s ease-in-out;
+    z-index: 4;
+
+}
+.img .text h1,p{
+    text-align: center;
+}
+
+.img button{
+    position: relative;
+    color:white;
+    width:100px;
+    height:36px;
+    margin:400px 75px;
+    transition: transform 1.2s ease-in-out;
+    overflow: hidden;
+}
+.img button span{
+    position: absolute;
+    top:0;
+    width: 94%;
+    height:100%;
+    border: 2px white solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    z-index: 4;
+    transition: transform 1.2s ease-in-out;
+}
+
+/* -----2---- */
+.s-up{
+    background: transparent;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    transition: transform 1.2s ease-in-out;
+    transform:translate3d(-900px,0,0);
+    margin-left: 483px;
+    z-index: 0;
+}
+
+.s-up h2{
+    font-size: 36px;
+}
+.s-up label{
+    font-size: 18px;
+    font-weight: 600;
+    color:#505f75;
+    margin-bottom: 15px;
+}
+.s-up input{
+    border-bottom:1px #505f75 solid;
+    margin-bottom: 15px;
+    width:200px;
+}
+.s-up button{
+    background-image: linear-gradient(90deg, #7579ff,#b224ef);
+    width:200px;
+    padding:9px 0;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    cursor:pointer;
+    border-radius: 50px;
+    margin:20px 0;
+}
+.s-up button:hover{
+    background-image: linear-gradient(90deg,#b224ef, #7579ff);
+}
+
+.cont.cont-2 .s-up{
+    transition: transform 1.2s ease-in-out;
+    transform:translate3d(0,0,0);
+}
+/* ------- */
+.sign-in{
+    transition: transform 1.2s ease-in-out;
+    background-color: transparent;
+    z-index:0;
+    background-color: white;
+}
+.cont.cont-2 .sign-in{
+    transition: transform 1.2s ease-in-out;
+    transform:translate3d(640px,0,0);
+    z-index: 0;
+}
+/* --------- */
+.cont.cont-2 .img{
+    transition: transform 1.2s ease-in-out;
+    transform:translate3d(0,0,0);
+}
+.cont.cont-2 .bg{
+    transition: transform 1.2s ease-in-out;
+    transform:translate3d(0,0,0);
+}
+.cont.cont-2  .img::before{
+    transition: transform 1.2s ease-in-out;
+    transform:translate3d(0,0,0);
+}
+
+/* -------- */
+.bg .img .text-2{
+    transition: transform 1.2s ease-in-out;
+    transform:translate3d(-640px,0,0); 
+}
+.cont.cont-2 .bg .img .text-2{
+    transition: transform 1.2s ease-in-out;
+    transform:translate3d(0,0,0); 
+}
+.cont.cont-2 .bg .img .text-1{
+    transition: transform 1.2s ease-in-out;
+    transform:translate3d(640px,0,0); 
+}
+.bg .img .b-up p{
+    transition: transform 1.2s ease-in-out;
+    transform:translate3d(0,-75px,0); 
+}
+.bg .img .b-in p{
+    transition: transform 1.2s ease-in-out;
+}
+.cont.cont-2 .bg .img .b-in p{
+    transition: transform 1.2s ease-in-out;
+    transform:translate3d(0,75px,0); 
+}
+.cont.cont-2 .bg .img .b-up p{
+    transition: transform 1.2s ease-in-out;
+    transform:translate3d(0,0,0); 
+}
+
+
+
