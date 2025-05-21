@@ -1,0 +1,153 @@
+/* ------------ */
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    padding:0;
+}
+
+.container{
+    margin:0 250px;
+}
+
+/* --------- */
+header{
+    background-color: #C05142;
+}
+.box{
+    display: flex;
+    justify-content: space-between;
+}
+.box .menu{
+    display:flex;
+}
+.box .menu div{
+    margin:15px 0;
+    margin-right: 15px;
+    color:white;
+    font-size: 17px;
+}
+
+.box .icon i{
+    font-size: 17px;
+    color:white;
+    margin:15px 0;
+    margin-left:15px;
+}
+
+.image{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.image .logo img{
+    width:200px;
+    height:auto;
+}
+.image .banner img{
+    width:650px;
+    height:auto;
+}
+hr{
+    margin:0;
+    opacity: 0.3;
+}
+.tag {
+    display: flex;
+    position: relative;
+}
+.tag div{
+    width:80px;
+    padding:10px 0;
+    font-size:15px;
+    text-align: center;
+    border-right: 1px rgb(201, 199, 199) solid;
+}
+.tag div:nth-child(1){
+    border-left: 1px rgb(201, 199, 199) solid;
+}
+.tag span{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    height:100%;
+    top:0;
+    right:0;
+    border-right: 1px rgb(201, 199, 199) solid;
+    border-left: 1px rgb(201, 199, 199) solid;
+    padding:0 10px;
+}
+.home-box{
+    display:flex;
+    justify-content: space-between;
+    position: relative;
+}
+.home-box .home{
+    width:33.3%;
+    height:350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color:white;
+}
+.home-box .home .title-2{
+    background-color: pink;
+    padding:3px 5px;
+    border-radius: 5px;
+}
+.home-box .home .title-1{
+    background-color: rgb(45, 45, 237);
+    padding:3px 5px;
+    border-radius: 5px;
+}
+.home-box .home .title-3{
+    background-color: green;
+    padding:3px 5px;
+    border-radius: 5px;
+}
+.home-box .home .text{
+    font-size:30px;
+    font-weight: 700;
+}
+p{
+    margin:10px;
+}
+.home-box .h3::before{
+    content: " ";
+    position: absolute;
+    top:0;
+    width: 33.3%;
+    height:100%;
+    z-index: -2;
+    filter: brightness(60%) contrast(120%);
+    background-image: url("/JS30/day6-2025-05-22/img/voice_18-634x433.jpg.webp");
+    background-size: cover;
+}
+.home-box .h1::before{
+    content: " ";
+    position: absolute;
+    top:0;
+    width: 33.3%;
+    height:100%;
+    z-index: -2;
+    filter: brightness(60%) contrast(120%);
+    background-image: url("/JS30/day6-2025-05-22/img/voice3_13-634x433.jpg.webp");
+    background-size: cover;
+}
+.home-box .h2::before{
+    content: " ";
+    position: absolute;
+    top:0;
+    width: 33.3%;
+    height:100%;
+    z-index: -2;
+    filter: brightness(60%) contrast(120%);
+    background-image: url("/JS30/day6-2025-05-22/img/voice3_37-634x433.jpg.webp");
+    background-size: cover;
+
+}
