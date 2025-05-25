@@ -1,0 +1,33 @@
+body{
+    width:99%;
+    height:100%;
+    background-image: url(/JS30/day9-2025-05-25/img/pexels-davidpickup-12605822.jpg);
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.change{
+    position: absolute;
+    background-color: rgba(255,255,255,0.7);
+    top:60px;
+    padding:30px;
+    border-radius: 10px;
+}
+.change h1{
+    margin:0;
+    font-size:25px;
+}
+.change select{
+    width:100%;
+    margin:20px 0;
+    height:30px;
+}
+.change .button{
+    width:100%;
+    padding:10px 0;
+    text-align: center;
+    background-color: rgb(156, 152, 152);
+    border-radius: 5px;
+    cursor:pointer;
+}
