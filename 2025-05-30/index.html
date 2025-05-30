@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let object={
+            msv:2222,
+            name:"minh",
+            class:4,
+            phone:99999
+        };
+        document.write(object.msv,object.name,object.class,object.phone,"<br>");
+
+        ////////
+        let ob=new Object();
+        ob.id=444;
+        ob.name="minh";
+        document.write(ob.id+ob.name,"<br>");
+
+        ///////
+        function oop(msv,ten,lop){
+            this.id=msv;
+            this.name=ten;
+            this.class=lop
+        };
+        a=new oop(44,"minh","04");
+        document.write(a.id,a.name,a.class)
+
+        ///
+        class oclass{
+            name;
+            age;
+            phone;
+            hello(){
+                document.write("<br>"+"hello"+this.name,"<br>");
+            };
+            change(phone){
+                this.phone=phone
+            }
+        };
+
+        b=new oclass();
+        b.name="minh";
+        b.age=33;
+        b.phone=999999;
+        b.hello();
+        document.write(b.name,b.age,b.phone);
+        b.change(44);
+        document.write(b.name,b.age,b.phone);
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -21,14 +21,7 @@ input{
     border-radius: 4px;
     outline: none;
 }
-button{
-    width:80px;
-    height:30px;
-    background-color: greenyellow;
-    border: none;
-    box-shadow: 3px 3px 5px #aeacac;;
-    font-size: 17px;
-}
+
 button:hover{
     font-size: 16px;
 }
@@ -48,4 +41,46 @@ table{
 }
 td{
     padding:5px 0;
+}
+.fix{
+    padding:10px 0;
+}
+.bt{
+    padding:3px 10px;
+    background-color: #4C7CF5;
+    cursor: pointer;
+    color:#fff;
+    border-radius: 5px;
+}
+
+
+
+
+
+.add{
+    background-color: greenyellow;
+    border: none;
+    box-shadow: 3px 3px 5px #aeacac;;
+    width:80px;
+    height:30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.save{
+    background-color: #4C7CF5;
+    border: none;
+    box-shadow: 3px 3px 5px #aeacac;;
+    width:80px;
+    height:30px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.change .save{
+    display:flex;
+}
+.change .add{
+    display: none;
 }
