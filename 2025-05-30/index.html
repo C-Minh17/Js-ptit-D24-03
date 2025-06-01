@@ -28,13 +28,15 @@
             this.class=lop
         };
         a=new oop(44,"minh","04");
-        document.write(a.id,a.name,a.class)
+        document.write(a.id,a.name,a.class,"<br><br>")
 
         ///
         class oclass{
-            name;
-            age;
-            phone;
+            constructor(name,age,phone){
+                this.name=name;
+                this.age=age;
+                this.phone=phone;
+            }
             hello(){
                 document.write("<br>"+"hello"+this.name,"<br>");
             };
@@ -43,13 +45,11 @@
             }
         };
 
-        b=new oclass();
-        b.name="minh";
-        b.age=33;
-        b.phone=999999;
+        b=new oclass("minh",19,"0999999");
+
         b.hello();
         document.write(b.name,b.age,b.phone);
-        b.change(44);
+        b.change("0888888888");
         document.write(b.name,b.age,b.phone);
 
 

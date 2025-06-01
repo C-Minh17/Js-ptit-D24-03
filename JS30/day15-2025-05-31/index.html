@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // bài  1
+        class student{
+            constructor(id,name,email,age){
+                this.id=id;
+                this.name=name;
+                this.email=email;
+                this.age=age;
+            };
+            displayInfo(){
+                document.write("id:"+this.id,"<br> name:"+this.name,"<br> email:"+this.email,"<br> age:"+this.age+"<br>")
+            }
+        };
+
+        let a=new student(44,"Minh","minh@cc.cc",19);
+        let b=new student(45,"Long","long@cc.cc",19);
+        // a.displayInfo();
+        // b.displayInfo();
+
+        /// bài 2
+        class employee{
+            constructor(name,position,baseSalary,workingDay){
+                this.name=name;
+                this.position=position;
+                this.baseSalary=baseSalary;
+                this.workingDay=workingDay;
+            };
+            calculateSalary(){
+                return this.baseSalary * this.workingDay
+            };
+            show(kq){
+                document.write("name:"+this.name,"<br> position:"+this.position,"<br> baseSalary:"+this.baseSalary,"<br> workingDay:"+this.workingDay,"<br> lương tổng:"+kq);
+
+            };
+        };
+        let c=new employee("Minh","fullstack","10000",25);
+        // c.show(c.calculateSalary());
+
+
+        /// bài 3
+        class product{
+            constructor(id,name,price,quantity){
+                this.id=id;
+                this.name=name;
+                this.price=price;
+                this.quantity=quantity;
+            };
+
+        };
+
+        let array=[new product(1,"sữa",12000,10),new product(2,"bánh",15000,20),new product(3,"kẹo",6000,30)];
+        
+        function add(id,name,price,quantity){
+            array.push(new product(id,name,price,quantity))
+        };
+
+        function sum(sp){
+            return sp.price * sp.quantity
+        };
+
+        function priceMax(list){
+            let max=-1;
+            let name="";
+            list.forEach(item => {
+                if(item.price>max){
+                    max=item.price;
+                    name=item.name
+                }
+            });
+            return name
+        };
+        add(4,"gà",50000,5);
+        console.log(sum(array[3]));
+        console.log(priceMax(array))
+
+    </script>
+
+
+</body>
+</html>

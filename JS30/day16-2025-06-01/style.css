@@ -1,0 +1,70 @@
+body{
+    margin:0;
+    background-color: aquamarine;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+*{
+    box-sizing: border-box;
+}
+.product{
+    margin:50px 0;
+    background-color: rgb(253, 253, 171);
+    padding:10px;
+}
+.item{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+input{
+    border:none;
+    outline:none;
+    width:24%;
+    height:25px;
+}
+.button{
+    margin:10px 0;
+    padding:5px 20px;
+    background-color: greenyellow;
+    border-radius: 5px;
+    border: none;
+}
+.save{
+    display: none;
+}
+.btn{
+    background-color: blue;
+}
+.btn .save{
+    display:block;
+}
+.btn .add{
+    display:none;
+}
+
+table{
+    width:900px;
+    background-color: white;
+    text-align: center;
+    border-collapse: collapse;
+}
+table,th,td,tr{
+    border: 1px black solid;
+}
+th,td{
+    padding:5px 0;
+}
+.bt span{
+    padding:5px;
+}
+.bt .fix{
+    background-color: aqua;
+    cursor: pointer;
+}
+.bt .delete{
+    background-color: rgb(245, 90, 90);
+    cursor: pointer;
+}
