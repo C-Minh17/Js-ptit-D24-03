@@ -49,6 +49,13 @@ function priceMax(){
     });
     return nameMax
 };
+function thongKe(){
+    document.querySelector("#tk").innerHTML=`
+        <br>
+        <div>Tổng giá trị tồn kho:${sum()}</div>
+        <div>Sản phẩm đắt nhất:${priceMax()}</div>
+    `
+};
 function display(){
     let html="";
     list.forEach(item=>{
@@ -72,6 +79,7 @@ function display(){
         item.addEventListener("click",()=>{
             remove(i);
             display();
+            thongKe();
             document.querySelector("#button").classList.remove("btn");
             divId.value="";
             divName.value="";
@@ -90,10 +98,12 @@ function display(){
         });
     })
 };
+
 divAdd.addEventListener("click",()=>{
     index++;
     add(divId.value,divName.value,divPrice.value,divSl.value);
     display();
+    thongKe();
     divId.value="";
     divName.value="";
     divPrice.value="";
@@ -105,6 +115,7 @@ document.querySelector("#save").addEventListener("click",()=>{
     list[index].price=divPrice.value;
     list[index].quantity=divSl.value;
     display();
+    thongKe();
     divId.value="";
     divName.value="";
     divPrice.value="";
