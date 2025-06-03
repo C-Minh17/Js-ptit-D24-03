@@ -56,6 +56,28 @@ function thongKe(){
         <div>Sản phẩm đắt nhất:${priceMax()}</div>
     `
 };
+function searchMSP(sp){
+    let msp=sp;
+    let html="";
+    list.forEach(item=>{
+        if (item.id==msp){
+            html+=`
+                <tr>
+                    <td>${item.id}</td>
+                    <td>${item.name}</td>
+                    <td>${item.price}</td>
+                    <td>${item.quantity}</td>
+                    <td>${item.price*item.quantity}</td>
+                    <td class="bt">
+                        <span class="fix">sửa</span>
+                        <span class="delete">Xóa</span>
+                    </td>
+                </tr>
+            `
+        }
+    });
+    document.querySelector("#display").innerHTML=html;
+};
 function display(){
     let html="";
     list.forEach(item=>{
@@ -122,7 +144,15 @@ document.querySelector("#save").addEventListener("click",()=>{
     divSl.value="";
 })
 
-
+document.querySelector("#bt_search").addEventListener("click",()=>{
+    const msp=document.querySelector("#search").value
+    if(msp!=""){
+        searchMSP(msp)
+    }
+});
+document.querySelector("#bt_reset").addEventListener("click",()=>{
+    display()
+});
 
 
 
